@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 from urllib import request
+import sys
+
+sys.path.append('./modules')
+
+import server_daemon
 
 
-url = 'https://lucasanss.xyz'
-
-response = request.urlopen(url)
-help(response)
-print(response.read())
+server.foo()
