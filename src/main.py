@@ -5,7 +5,5 @@ import sys
 
 sys.path.append('./modules')
 
-import server_daemon
-
-
-server.foo()
+import TCP_client
+TCP_client.foo()
