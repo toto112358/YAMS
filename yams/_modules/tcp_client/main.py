@@ -1,5 +1,7 @@
 import socket
 import sys
+
+
 '''
 Reads message from the standart input, and sends it
 arguments:
