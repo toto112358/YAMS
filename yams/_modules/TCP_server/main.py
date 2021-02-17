@@ -13,7 +13,7 @@ class TCPHandler(StreamTCPHandler):
         self.client_name = str(self.data).split(' ')[0]
         self.message = ' '.join(str(self.data).split(' ')[1:])
         print(f'{self.client_name} wrote {self.message}')
-        self.request.sendall(bytes(self.message))
+        self.request.sendall(bytes('OK' + '\n', 'utf-8'))
 
 
 if 'yams._modules' in __name__:

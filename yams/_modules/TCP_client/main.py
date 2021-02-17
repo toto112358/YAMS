@@ -9,18 +9,19 @@ Don't forget to include the charset at last line of msg
 '''
 
 
-def send_message(message):
+def send_message(message, destination: tuple):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-        sock.connect((HOST, PORT))
-        sock.sendall(bytes(message))
+        sock.connect(destination)
+        sock.sendall(bytes(message + '\n', 'utf-8'))
 
         received = str(sock.recv(1024), 'utf-8')
 
     print(f'Sent: {message}')
     print(f'Received: {received}')
 
-if __name__ == '__main__':
-    destination = tuple(args[1].split(':'))  # HOST:PORT
-    PORT = int(PORT)
+if 'yams._modules' in __name__:
+    args = sys.argv
+    host, port = args[1].split(':')
+    port = int(port)
     message = sys.stdin.read()[:-1]
-    send_message(message, destination)
+    send_message(message, (host, port))
