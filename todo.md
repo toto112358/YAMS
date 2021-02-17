@@ -14,6 +14,8 @@ fonctionnement:
 
 # client
 
+Liens symbolique pour module par défaut ???
+
 envoi msg:
 
 message -> module de chiffrement(1) -> module de mise en forme du msg(2) -> module d'envoi HOST:PORT

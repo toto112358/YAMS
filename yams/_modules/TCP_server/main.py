@@ -16,7 +16,7 @@ class TCPHandler(StreamTCPHandler):
         self.request.sendall(bytes(self.message))
 
 
-if __name__ == '__main__':
+if 'yams._modules' in __name__:
     args = sys.argv[1:]
     HOST, PORT = args[0].split(':')
     PORT = int(PORT)
