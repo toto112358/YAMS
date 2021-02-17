@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="yams", # Replace with your own username
-    version="0.0.1",
+    version="0.0.1-experimental",
     author="L. Pham-Trong, S. Vallette",
     author_email="spam@lucasanss.xyz",
     description="YAMS (Yet Another Messaging System) is a modular and extensible messaging system",
