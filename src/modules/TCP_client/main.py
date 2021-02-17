@@ -1,15 +1,29 @@
 import socket
 import sys
-server = 'lucasanss.xyz'
+'''
+Reads message from the standart input,
+main.py username host:port
 
-HOST, PORT = server, 1111
-data = " ".join(sys.argv[1:])
+if message == 'get_msg()': server will send all message pending
+non encrypted messages are treated as commands by the server.
+'''
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-    sock.connect((HOST, PORT))
-    sock.sendall(bytes(data + '\n', 'utf-8'))
 
-    received = str(sock.recv(1024), 'utf-8')
+args = sys.argv[1:]
+username = args[0]
+HOST, PORT = args[1].split(':')
+PORT = int(PORT)
 
-print(f'Sent: {data}')
-print(f'Received: {received}')
+
+def send_message(username, message):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.connect((HOST, PORT))
+        sock.sendall(bytes(username+ ' ' + message + '\n', 'utf-8'))
+
+        received = str(sock.recv(1024), 'utf-8')
+
+    print(f'Sent: {message}')
+    print(f'Received: {received}')
+
+message = sys.stdin.read()[:-1]
+send_message(username, message)
