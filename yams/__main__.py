@@ -3,4 +3,4 @@
 from urllib import request
 import sys
 
-import .modules/TCP_client
+import ._modules/TCP_client
