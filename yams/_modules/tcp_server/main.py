@@ -2,9 +2,15 @@ import sys
 import socketserver
 
 
+class bytes(bytes):
+    def __str__(self):
+        return super().__str__()[2:-1]
+    __repr__ = __str__
+
+
 class StreamTCPHandler(socketserver.StreamRequestHandler):
     def handle(self):
-        self.data = self.rfile.readline().strip()
+        self.data = bytes(self.rfile.readline().strip())
 
 
 class TCPHandler(StreamTCPHandler):
