@@ -9,6 +9,6 @@ with sys.stdin as f:
 
 T = Twofish(secret_key)
 
-exec(f'decrypted = decrypt(b"{imput}", secret_key)')
+exec(f'decrypted = decrypt(b"""{imput}""", secret_key)')
 
 print(decrypted.strip(b'\x00').decode(), end='')

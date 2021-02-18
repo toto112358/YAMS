@@ -1,0 +1,31 @@
+.TH YAMS_ENCODE 1
+
+.SH NAME
+.P
+encode \(em YAMS module
+
+.SH DESCRIPTION
+.P
+.B "encode"
+translates a string from the
+.I stdin
+to a number representing it.
+It is part of
+.I \(lq_basic_encode_decode.\(rq
+
+.SH USAGE
+.SS Example
+.RS
+.EX
+sh-5.1$ echo 'my secret message'|yams encode
+905628794854598108510480541163812223482221sh-5.1$
+.EE
+.RE
+
+.SH AUTHORS
+.P
+L. Pham-Trong, S. Valette
+
+.SH SEE ALSO
+.P
+yams_decode

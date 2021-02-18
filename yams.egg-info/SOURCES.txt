@@ -1,0 +1,7 @@
+README.md
+setup.py
+yams.egg-info/PKG-INFO
+yams.egg-info/SOURCES.txt
+yams.egg-info/dependency_links.txt
+yams.egg-info/requires.txt
+yams.egg-info/top_level.txt
