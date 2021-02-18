@@ -6,3 +6,4 @@ try:
 except:
     print('commands available:\n')
     from .commands import *
+    print('try help + command')
