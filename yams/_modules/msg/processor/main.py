@@ -1,4 +1,4 @@
-encode_module = '.._basic_encode_decode'
+encode_module = '...._modules._basic_encode_decode'
 encode_func = 'encode'
 exec(f'from {encode_module} import {encode_func} as encode')
 

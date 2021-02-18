@@ -1,0 +1,38 @@
+.TH YAMS_TCP_SENDER 1
+
+.NH NAME
+tcp.sender \(em message sending module of the YAMS messaging system
+
+.NH SYNOPSIS
+.EX
+stdin (message) --> tcp.sender HOST:PORT
+.EN
+.NH DESCRIPTION
+tcp.sender will take its input from the stdin, and forward its input
+to its arguments HOST:PORT.
+
+.NH EXAMPLES
+.SH Client side
+.BS
+.EX
+sh-5.1$ echo 'luca This is a msg from Luca'| yams msg_processor | yams tcp.sender localhost:1234
+Sent: luca 231491187591521828709693806234833716049963092
+Received: OK
+.EE
+.BE
+.I "Note that msg_processor ENCRYPTS the message using a specified module (here, encode)."
+.SH Server side
+.BS
+.EX
+sh-5.1$ yams tcp.server localhost:1234
+luca wrote 231491187591521828709693806234833716049963092
+.EE
+.BE
+
+.NH AUTHORS
+.P
+L. Pham-Trong, S. Vallette
+
+.NH SEE ALSO
+.P
+tcp.sender, encode, decode, encrypt.twofish, decrypt.twofish

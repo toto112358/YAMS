@@ -1,6 +1,6 @@
 import sys
 import socketserver
-from .._patched_classes.bytes import *
+from ...._modules._patched_classes.bytes import *
 
 
 class StreamTCPHandler(socketserver.StreamRequestHandler):

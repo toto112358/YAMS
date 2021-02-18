@@ -1,0 +1,29 @@
+.TH YAMS_DECRYPT.TWOFISH 1
+
+.SH NAME
+.P
+.I "decrypt.twofish"
+\(em yams' built-in decryption algorithm.
+
+.SH SYNOPSIS
+.P
+.I "decrypt.twofish"
+takes its input from the
+.I "stdin"
+and returns an decrypted message.
+
+.SH CONFIGURATION
+.P
+In order to change the default key, edit the variable \(lqsecret_key\(rq
+
+.SH DESCRIPTION
+.P
+The module decrypt.twofish was made to be optionnally used with \fImsg_processor\fP.
+
+.SH AUTHORS
+.P
+L. Pham-Trong, S. Vallette
+
+.SH SEE ALSO
+.P
+msg_processor, encrypt.twofish

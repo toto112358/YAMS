@@ -22,7 +22,7 @@ AAUUTTHHOORRSS
 
 
 SSEEEE AALLSSOO
-       yams_decode
+       decode
 
 
 

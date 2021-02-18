@@ -30,4 +30,4 @@ L. Pham-Trong, S. Valette
 
 .SH SEE ALSO
 .P
-yams_encode
+encode

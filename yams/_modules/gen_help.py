@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import os
 cmd = """
 du  | awk '{print $2}' | sed 's/\.\///g'|grep -v ^_|grep -v __|sed '$d'|grep -v '/_'

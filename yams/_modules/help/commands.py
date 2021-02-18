@@ -1,8 +1,8 @@
-print("""tcp_server
-encode
+print("""encode
 decode
+tcp.server
+tcp.sender
+msg.processor
 encrypt.twofish
 help
-decrypt.twofish
-msg_processor
-msg_sender""")
+decrypt.twofish""")
