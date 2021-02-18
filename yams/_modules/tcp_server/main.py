@@ -1,11 +1,6 @@
 import sys
 import socketserver
-
-
-class bytes(bytes):
-    def __str__(self):
-        return super().__str__()[2:-1]
-    __repr__ = __str__
+from .._patched_classes.bytes import *
 
 
 class StreamTCPHandler(socketserver.StreamRequestHandler):
