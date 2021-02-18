@@ -22,6 +22,7 @@ def send_message(message, destination: tuple):
     print(f'Sent: {message}')
     print(f'Received: {received}')
 
+
 if 'yams._modules' in __name__:
     args = sys.argv
     host, port = args[1].split(':')

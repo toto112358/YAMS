@@ -5,6 +5,7 @@ from ...._modules._patched_classes.bytes import *
 # better __str__ and __repr__ for byte
 p = bytes.pretty_print
 
+
 def encrypt(msg: bytes, key: bytes):
     T = Twofish(key)
     output = bytes('', 'utf-8')
@@ -16,6 +17,7 @@ def encrypt(msg: bytes, key: bytes):
         msg = msg[16:]
 
     return(output)
+
 
 def decrypt(msg: bytes, key: bytes):
     T = Twofish(key)
