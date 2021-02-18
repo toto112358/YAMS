@@ -1,5 +1,4 @@
-print("""
-YAMS_ENCODE(1)              General Commands Manual             YAMS_ENCODE(1)
+print("""YAMS_ENCODE(1)              General Commands Manual             YAMS_ENCODE(1)
 
 
 
@@ -27,4 +26,5 @@ SSEEEE AALLSSOO
 
 
 
-                                                                YAMS_ENCODE(1)""")
+                                                                YAMS_ENCODE(1)
+""")
