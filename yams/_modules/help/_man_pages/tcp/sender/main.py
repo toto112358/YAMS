@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 print("""YAMS_TCP_SENDER(1)          General Commands Manual         YAMS_TCP_SENDER(1)
 
 

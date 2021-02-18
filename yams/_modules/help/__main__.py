@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 try:
     man_page = '._man_pages.'+sys.argv[1]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class bytes(bytes):
     @staticmethod
     def pretty_print(arg):

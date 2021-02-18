@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 print("""YAMS_ENCRYPT.TWOFISH(1)     General Commands Manual    YAMS_ENCRYPT.TWOFISH(1)
 
 

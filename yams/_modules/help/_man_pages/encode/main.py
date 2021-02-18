@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 print("""YAMS_ENCODE(1)              General Commands Manual             YAMS_ENCODE(1)
 
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from baseXtoY import baseXtoY
 '''
 gets input, returns coded output

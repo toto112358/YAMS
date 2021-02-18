@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from twofish import Twofish
 # 16 bytes blocks
 from ...._modules._patched_classes.bytes import *

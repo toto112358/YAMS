@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 import socketserver
 from ...._modules._patched_classes.bytes import *

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 from ...._modules._algos.twofish import *
 secret_key = b'by luca and serge'

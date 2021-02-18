@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 print("""encode
 decode
 tcp.server
