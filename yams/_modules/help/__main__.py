@@ -5,6 +5,6 @@ try:
     exec(f'''from {man_page} import *''')
 
 except:
-    print('commands available:\n')
+    print('submodules available:\n')
     from .commands import *
     print('try help + command')

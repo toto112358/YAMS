@@ -14,9 +14,9 @@ except IndexError:
     exec(f"from {module} import __main__")
 
 except ModuleNotFoundError:
-    print('run yams help to get a list of all commands')
+    print('run yams help to get a list of all submodules')
 
 except ImportError:
-    print('run yams help to get a list of all commands')
+    print('run yams help to get a list of all submodules')
 
 # todo: add exception handler class if needed
